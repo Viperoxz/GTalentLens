@@ -1,0 +1,28 @@
+[project]
+name = "GTalentLens"
+version = "0.1.0"
+description = "A backend service for talent processing and analysis."
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pdfplumber",
+    "python-docx",
+    "pytesseract",
+    "pdf2image",
+    "Pillow",
+    "httpx",
+    "qdrant-client",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "redis",
+    "pydantic",
+    "langchain",
+    "elasticsearch",
+    "spacy"
+]
+requires-python = ">=3.11"
+
+[tool.uv]  # Optional config for uv behavior
+# Uncomment the line below if you want uv to prefer wheels
+# prefer-binary = true
