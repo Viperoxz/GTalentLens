@@ -1,0 +1,3 @@
+"""
+Load config from .env
+"""

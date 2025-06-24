@@ -19,7 +19,8 @@ dependencies = [
     "pydantic",
     "langchain",
     "elasticsearch",
-    "spacy"
+    "spacy",
+    "pymupdf"
 ]
 requires-python = ">=3.11"
 

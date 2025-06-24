@@ -1,0 +1,11 @@
+.venv
+.python-version
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+.env
+tmp
+*.pdf
+*.log
