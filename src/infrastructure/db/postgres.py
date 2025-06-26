@@ -11,6 +11,7 @@ DATABASE_URL = os.getenv(
     "POSTGRES_URI",
     "postgresql://hradmin:hrpass@postgres/hr_db"
 )
+print(f"Using DATABASE_URL: {DATABASE_URL}")
 
 @contextlib.contextmanager
 def get_conn():

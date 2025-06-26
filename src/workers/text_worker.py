@@ -3,9 +3,8 @@ import sys
 import os
 from pathlib import Path
 
-src_path = str(Path(__file__).resolve().parent.parent.parent)
-if src_path not in sys.path:
-    sys.path.insert(0, src_path)
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT_DIR))
 
 from infrastructure.queue.redis_queue import entity_queue
 from infrastructure.db.postgres import save_raw_text
