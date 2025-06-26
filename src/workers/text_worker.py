@@ -12,7 +12,7 @@ from services.text_extractor.pdf import PDFTextExtractor
 from infrastructure.logger import log_info, log_error
 
 def extract_and_enqueue_entities(cv_id: str, file_path: str) -> None:
-    """Bước 1: Extract PDF → lưu raw_text vào DB → đẩy cv_id qua entity_queue."""
+    """Step 1: Extract PDF → save raw_text into DB → push cv_id to entity_queue."""
     log_info(f"[TextWorker] Start extract: {file_path}")
 
     extractor = PDFTextExtractor()
